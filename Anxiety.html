@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Happiness Index Calculator</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    form {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    label {
+        display: block;
+        margin-bottom: 5px;
+        -webkit-text-fill-color: #000000;
+        font-size: large;
+        font-family: 'Times New Roman', Times, serif;
+        font-style: italic;
+        font-weight: bold;
+        width: auto;
+        border: 3px solid #ffffff;
+        background-color: #fff2d8;
+        box-shadow: 0px 6px 4px #6d4a03;
+        padding: 10px 15px;
+    }
+    input[type="radio"] {   
+        display: inline;
+        margin-right: 8px;
+        margin-left: 2px;
+        margin-bottom: 1px;
+        font-style: italic;
+        -webkit-text-fill-color: #000000;
+        position: relative;
+        padding: 0.75rem 1.25rem;
+    }
+    button {
+    display: block;
+    margin: 0 auto; /* This will center the button horizontally */
+    padding: 10px 20px; 
+    background-color: #81b5b7;
+    color: #002f30;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    font-style: italic;
+    font-weight: bold;
+    border-style: double;
+    box-shadow: 0px 6px 4px #000000;
+    border-color: #ffffff;
+    cursor: auto;
+    border-radius: 25px;
+}
+
+
+    #result{
+      width: 900px;
+            margin: 0 auto;
+            padding: 40px;
+            border: 1px solid #ccc;
+            text-align: center;
+            border-radius: 10%;
+            margin-bottom: 40px;
+    }
+
+    #result ul {
+            width: 300px;
+            margin: 0 auto;
+            padding: px;
+            border: 2px solid #ccc;
+            text-align: left;
+            border-radius: 3%;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #81B5B7;
+            list-style-type: none;
+        }
+
+        #result ul li {
+            margin-top: 20px;
+            margin-left: 10px;
+            margin-right: 20px;
+            margin-bottom: 20px; /* Adjust spacing between list items */
+        }   
+    
+</style>
+</head>
+<div class="wrapper row1">
+ <header id="header" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <div id="logo" class="one_half first">
+      <h1 class="logoname"><a href = "index.html"><span>Mental Health</span></a></h1> 
+	  <h1 class="logoname">Let's connect</h1> 
+    </div>
+    <div class="one_quarter">
+      <div class="wrap">
+	  <form role="search" id="form">
+		</form>	
+	  </div>
+    </div>
+	
+    <!-- ################################################################################################ -->
+  </header>
+ <nav id="mainav" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <ul class="clear">
+      <li><a href="./index.html">Home</a></li>
+      <li class="active"><a class="drop" href="#">Mental Health Basics</a>
+        <ul>
+		  <li><a href="./pages/what-is-mental-health.html">What is Mental Health</a></li>
+          <!--<li><a href="./pages/mental-health-for-indigenous-people.html">Mental Health </a></li>-->
+          
+        </ul>
+      </li>
+      <li><a class="drop" href="#">What to Look for</a>
+        <ul>
+          
+          <li><a href="./pages/anxiety-disorders.html">Anxiety Disorder</a></li>
+          <li><a href="./pages/anxiety-disorders.html">Depression</a></li>
+         <!--- <li><a class="drop" href="#">PTSD</a>-->
+         <ul>
+
+          <!--<li><a href="./pages/ptsd.html">What is PTSD</a></li>
+          <li><a href="./pages/ptsd.html">Intergenerational Trauma</a></li>
+          <li> <a class = "drop" href="#">Screening Self-Test</a>-->
+		  <ul>
+			<li><a href="https://depression.org.nz/is-it-depression-anxiety/self-test/">Depression and Anxiety Self-Test</a></li>
+			<li><a href="https://screening.mhanational.org/screening-tools/ptsd/">PTSD Self-Test</a></li>
+		  </ul>
+		  </li>
+
+         </ul>
+
+        </ul>
+
+      </li>
+	  
+      <li><a class = "drop" href="#">Login/Register</a>
+	  <ul>
+		<li><a href="./pages/login.html">login</a></li>
+		<li><a href="./pages/registration.html">registration</a></li>
+	  </ul>
+	  <li class="active"><a class="drop" href="#">Change Language</a>
+        <ul>
+		  <li><a href="#">Cree</a></li>
+          <li><a href="#">Anishinaabe</a></li>
+		  <li><a href="#">Haudenosaunee</a></li>
+		  <li><a href="#">Inuk</a></li>
+          <li><a href="#">Métis</a></li>
+        </ul>
+      </li>
+      <li>
+	  <a href="./index.html#target">About us</a>
+	  </li>
+	   
+    </ul>
+  
+  </nav>
+</div>
+<div class="wrapper bgded overlay" style="background-image:url('images/demo/AnxTest.png');">
+  <div id="pageintro" class="hoc clear"> 
+  </div>
+</div>
+<h1 class = "heading" style="font-size: 50px; margin-top: 30px; text-align: center; -webkit-text-fill-color: #F7A804;" ><strong>Anxiety Test </strong> </h1>
+<form id="anxietyTestForm">
+  <div class="question">
+      <label for="q1">1. Feeling nervous, anxious, or on edge?</label><br>
+      <p style="-webkit-text-fill-color: #000000; margin-top: auto; font-family: 'Times New Roman', Times, serif ;font-style: italic; font-size: medium;" >
+      <input type="radio" name="q1" value="0"> Not at all<br>
+      <input type="radio" name="q1" value="1"> Occasionally<br>
+      <input type="radio" name="q1" value="2"> Often<br>
+      <input type="radio" name="q1" value="3"> Nearly every day<br>
+    </p>
+  </div>
+  <div class="question">
+      <label for="q2">2. Have you struggled to stop or control worrying?</label><br>
+      <p style="-webkit-text-fill-color: #000000; margin-top: auto; font-family: 'Times New Roman', Times, serif ;font-style: italic; font-size: medium;" >
+      <input type="radio" name="q2" value="0"> Not really<br>
+      <input type="radio" name="q2" value="1"> Sometimes<br>
+      <input type="radio" name="q2" value="2"> Quite often<br>
+      <input type="radio" name="q2" value="3"> Almost always<br>
+    </p>
+  </div>
+  <div class="question">
+      <label for="q3">3. Worrying too much about different things?</label><br>
+      <p style="-webkit-text-fill-color: #000000; margin-top: auto; font-family: 'Times New Roman', Times, serif ;font-style: italic; font-size: medium;" > 
+      <input type="radio" name="q3" value="0"> Not at all<br>
+      <input type="radio" name="q3" value="1"> Occasionally<br>
+      <input type="radio" name="q3" value="2"> Frequently<br>
+      <input type="radio" name="q3" value="3"> Nearly all the time<br>
+    </p>
+  </div>
+  <div class="question">
+      <label for="q4">4. Have you had difficulty relaxing?</label><br>
+      <p style="-webkit-text-fill-color: #000000; margin-top: auto; font-family: 'Times New Roman', Times, serif ;font-style: italic; font-size: medium;" > 
+      <input type="radio" name="q4" value="0"> Rarely<br>
+      <input type="radio" name="q4" value="1"> Occasionally<br>
+      <input type="radio" name="q4" value="2"> Frequently<br>
+      <input type="radio" name="q4" value="3"> Almost every day<br>
+    </p>
+  </div>
+  <div class="question">
+      <label for="q5">5. Do you feel restless to the point where it's hard to sit still?</label><br>
+      <p style="-webkit-text-fill-color: #000000; margin-top: auto; font-family: 'Times New Roman', Times, serif ;font-style: italic; font-size: medium;" > 
+      <input type="radio" name="q5" value="0"> Never<br>
+      <input type="radio" name="q5" value="1"> Sometimes<br>
+      <input type="radio" name="q5" value="2"> Very Often<br>
+      <input type="radio" name="q5" value="3"> Almost every day<br>
+      </p>
+  </div>
+  <div class="question">
+      <label for="q6">6. Have you experienced stomach problems, such as feeling sick or having stomach cramps?</label><br>
+      <p style="-webkit-text-fill-color: #000000; margin-top: auto; font-family: 'Times New Roman', Times, serif ;font-style: italic; font-size: medium;" >
+      <input type="radio" name="q6" value="0"> Never<br>
+      <input type="radio" name="q6" value="1"> Occasionally<br>
+      <input type="radio" name="q6" value="2"> Frequently<br>
+      <input type="radio" name="q6" value="3"> Nearly every day<br>
+    </p>
+  </div>
+  <div class="question">
+      <label for="q7">7. Feeling afraid as if something awful might happen?</label><br>
+      <p style="-webkit-text-fill-color: #000000; margin-top: auto; font-family: 'Times New Roman', Times, serif ;font-style: italic; font-size: medium;" >
+      <input type="radio" name="q7" value="0"> Never<br>
+      <input type="radio" name="q7" value="1"> Sometimes<br>
+      <input type="radio" name="q7" value="2"> Often<br>
+      <input type="radio" name="q7" value="3"> Almost every day<br>
+    </p>
+  </div>
+  <div class="question">
+      <label for="q8">8. Thoughts of harm coming to yourself or others?</label><br>
+      <p style="-webkit-text-fill-color: #000000; margin-top: auto; font-family: 'Times New Roman', Times, serif ;font-style: italic; font-size: medium;" >
+      <input type="radio" name="q8" value="0"> Not at all<br>
+      <input type="radio" name="q8" value="1"> Not very often<br>
+      <input type="radio" name="q8" value="2"> Often<br>
+      <input type="radio" name="q8" value="3"> Almost always<br>
+    </p>
+  </div>
+  <div class="question">
+      <label for="q9">9. Difficulty in concentrating on things?</label><br>
+      <p style="-webkit-text-fill-color: #000000; margin-top: auto; font-family: 'Times New Roman', Times, serif ;font-style: italic; font-size: medium;" >
+      <input type="radio" name="q9" value="0"> Not at all<br>
+      <input type="radio" name="q9" value="1"> Occasionally<br>
+      <input type="radio" name="q9" value="2"> Frequently<br>
+      <input type="radio" name="q9" value="3"> Practically every day<br>
+    </p>
+  </div>
+  <div class="question">
+      <label for="q10">10. Have you felt dizzy and unsteady at times regularly?</label><br>
+      <p style="-webkit-text-fill-color: #000000; margin-top: auto; font-family: 'Times New Roman', Times, serif ;font-style: italic; font-size: medium;" >
+      <input type="radio" name="q10" value="0"> Never<br>
+      <input type="radio" name="q10" value="1"> Rarely<br>
+      <input type="radio" name="q10" value="2"> Sometimes<br>
+      <input type="radio" name="q10" value="3"> Frequently<br>
+    </p>
+  </div>
+  <br>
+  <br>
+  <button type="button" onclick="calculateAnxietyScore()">Calculate Score</button>
+  <br><br>
+</form>
+
+<div id="result" style="display: none; font-family: 'Times New Roman', Times, serif;font-style: italic; font-weight: bold;">
+  <h2 style="-webkit-text-fill-color: #F7A804; font-size: 30px; margin-top: 20px;"><strong>Anxiety Test Result</strong> </h2>
+  <p style="font-family: 'Times New Roman', Times, serif;font-style: italic; -webkit-text-fill-color: #002f30; font-weight: bold;">Your score is :<span id = 'score'></span></p>
+  <p style="font-family: 'Times New Roman', Times, serif;font-style: italic; -webkit-text-fill-color: #002f30; font-weight: bold;">Interpretation:</p>
+  
+  <ul style="font-family: 'Times New Roman', Times, serif; color: #e4e7fd;">
+      <li>0-4: Minimal anxiety symptoms</li>
+      <li>5-9: Mild anxiety symptoms</li>
+      <li>10-14: Moderate anxiety symptoms</li>
+      <li>15-19: Moderately severe anxiety symptoms</li>
+      <li>20-27: Severe anxiety symptoms</li>
+  </ul><br><br>
+  <p style="font-family: 'Times New Roman', Times, serif;font-style: italic; -webkit-text-fill-color: #002f30; font-weight: bold; text-align: center; margin-top: 30px;">Here's a playlist for you:</p>
+  <iframe id="playlist" style="border-radius:14px" src="" width="100%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+</div>
+<br><br><br>
+<script>
+  function calculateAnxietyScore() 
+  {
+      let totalScore = 0;
+      const form = document.getElementById('anxietyTestForm');
+      const inputs = form.querySelectorAll('input[type="radio"]:checked');
+
+      inputs.forEach(input =>{
+          totalScore += parseInt(input.value);
+      });
+      document.getElementById('score').textContent= totalScore;
+      document.getElementById('result').style.display='block';
+
+      var playlist = document.getElementById("playlist");
+
+      if (totalScore <= 2) {
+                playlist.src = "https://open.spotify.com/embed/playlist/6Ail4atkMPnFdPpAMVcbJ8?utm_source=generator";
+            } else if (totalScore > 2 && totalScore <= 5) {
+                playlist.src = "https://open.spotify.com/embed/playlist/4XCCOQSZcfqMGPlnC5C1JS?utm_source=generator";
+            } else if (totalScore > 5 && totalScore <= 8) {
+                playlist.src = "https://open.spotify.com/embed/playlist/328DCP4z97cwmrD22k2j2t?utm_source=generator";
+            } else if (totalScore > 8 && totalScore <= 12) {
+                playlist.src = "https://open.spotify.com/embed/playlist/4vMPqIdMqrezQeLZOBTNm3?utm_source=generator";
+            }
+              else if (totalScore > 12 && totalScore <= 16) {
+                playlist.src = "https://open.spotify.com/embed/playlist/05APm5sZB9gioY8HQaYctv?utm_source=generator"
+            }
+              else if (totalScore > 16 && totalScore <= 20) {
+                playlist.src =  "https://open.spotify.com/embed/playlist/4IugsKVhjOZUL6D6e0Jkfx?utm_source=generator"
+            }
+              else if (totalScore > 20 && totalScore <= 23) {
+                playlist.src = "https://open.spotify.com/embed/playlist/7a53OMb5dsMRZwANCeLop5?utm_source=generator"
+            }
+              else if (totalScore > 23 && totalScore <= 27) {
+                playlist.src = "https://open.spotify.com/embed/playlist/7h7jbbA7tPpj9sDNN7KOZV?utm_source=generator"
+            } else {
+                playlist.src = "https://open.spotify.com/embed/playlist/4whCCQv7k3U2oDIRz1D70s?utm_source=generator";
+            }
+
+      document.getElementById("result").scrollIntoView({ behavior: 'smooth' });
+    }
+
+</script>
+</body>
+</html>
