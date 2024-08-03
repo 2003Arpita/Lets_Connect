@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Happiness Index Calculator</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    form {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    label {
+        display: block;
+        margin-bottom: 15px;
+        -webkit-text-fill-color: #000000;
+        font-size: large;
+        font-family: 'Times New Roman', Times, serif;
+        font-style: italic;
+        font-weight: bold;
+        width: auto;
+        border: 3px solid #ffffff;
+        background-color: #fff2d8;
+        box-shadow: 0px 6px 4px #6d4a03;
+        padding: 10px 15px;
+    }
+    input[type="radio"] {   
+        display: inline;
+        margin-right: 8px;
+        margin-left: 2px;
+        margin-bottom: 1px;
+        -webkit-text-fill-color: #000000;
+        position: relative;
+        padding: 0.75rem 1.25rem;
+    }
+    button {
+    display: block;
+    margin: 0 auto; /* This will center the button horizontally */
+    padding: 10px 20px; 
+    background-color: #81b5b7;
+    color: #002f30;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    font-style: italic;
+    font-weight: bold;
+    border-style: double;
+    box-shadow: 0px 6px 4px #000000;
+    border-color: #ffffff;
+    cursor: auto;
+    border-radius: 25px;
+}
+
+    #container {
+            width: 500px;
+            margin: 0 auto;
+            padding: 40px;
+            border: 1px solid #ccc;
+            text-align: center;
+            border-radius: 10%;
+        }
+    
+</style>
+</head>
+<div class="wrapper row1">
+ <header id="header" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <div id="logo" class="one_half first">
+      <h1 class="logoname"><a href = "index.html"><span>Mental Health</span></a></h1> 
+	  <h1 class="logoname">Let's connect</h1> 
+    </div>
+    <div class="one_quarter">
+      <div class="wrap">
+	  <form role="search" id="form">
+		</form>	
+	  </div>
+    </div>
+	
+    <!-- ################################################################################################ -->
+  </header>
+ <nav id="mainav" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <ul class="clear">
+      <li><a href="./index.html">Home</a></li>
+      <li class="active"><a class="drop" href="#">Mental Health Basics</a>
+        <ul>
+		  <li><a href="./pages/what-is-mental-health.html">What is Mental Health</a></li>
+          <!--<li><a href="./pages/mental-health-for-indigenous-people.html">Mental Health </a></li>-->
+          
+        </ul>
+      </li>
+      <li><a class="drop" href="#">What to Look for</a>
+        <ul>
+          
+          <li><a href="./pages/anxiety-disorders.html">Anxiety Disorder</a></li>
+          <li><a href="./pages/anxiety-disorders.html">Depression</a></li>
+         <!--- <li><a class="drop" href="#">PTSD</a>-->
+         <ul>
+
+          <!--<li><a href="./pages/ptsd.html">What is PTSD</a></li>
+          <li><a href="./pages/ptsd.html">Intergenerational Trauma</a></li>
+          <li> <a class = "drop" href="#">Screening Self-Test</a>-->
+		  <ul>
+			<li><a href="https://depression.org.nz/is-it-depression-anxiety/self-test/">Depression and Anxiety Self-Test</a></li>
+			<li><a href="https://screening.mhanational.org/screening-tools/ptsd/">PTSD Self-Test</a></li>
+		  </ul>
+		  </li>
+
+         </ul>
+
+        </ul>
+
+      </li>
+	  
+      <li><a class = "drop" href="#">Login/Register</a>
+	  <ul>
+		<li><a href="./pages/login.html">login</a></li>
+		<li><a href="./pages/registration.html">registration</a></li>
+	  </ul>
+	  <li class="active"><a class="drop" href="#">Change Language</a>
+        <ul>
+		  <li><a href="#">Cree</a></li>
+          <li><a href="#">Anishinaabe</a></li>
+		  <li><a href="#">Haudenosaunee</a></li>
+		  <li><a href="#">Inuk</a></li>
+          <li><a href="#">Métis</a></li>
+        </ul>
+      </li>
+      <li>
+	  <a href="./index.html#target">About us</a>
+	  </li>
+	   
+    </ul>
+  
+  </nav>
+</div>
+<div class="wrapper bgded overlay" style="background-image:url('images/demo/HappyTest.png');">
+  <div id="pageintro" class="hoc clear"> 
+  </div>
+</div>
+<h1 class = "heading" style="font-size: 50px; margin-top: 30px; text-align: center; -webkit-text-fill-color: #F7A804;" ><strong>Calculate Your Happiness Index</strong> </h1>
+<form id="happinessForm">
+    
+  
+  <p style="-webkit-text-fill-color: #000000; margin-top: 1px; font-family: 'Times New Roman', Times, serif ;font-style: italic; font-size: medium;" >
+    <label>1. How often do you feel happy?</label>
+    <input type="radio" name="happy" value="10"> Very Often <br>
+    <input type="radio" name="happy" value="8"> Often <br>
+    <input type="radio" name="happy" value="6"> Sometimes <br>
+    <input type="radio" name="happy" value="4"> Rarely <br>
+    <input type="radio" name="happy" value="2"> Never <br>
+    <br>
+
+    <label>2. How satisfied are you with your life overall?</label>
+    <input type="radio" name="satisfaction" value="10"> Very Satisfied <br>
+    <input type="radio" name="satisfaction" value="8"> Satisfied <br>
+    <input type="radio" name="satisfaction" value="6"> Neutral <br>
+    <input type="radio" name="satisfaction" value="4"> Dissatisfied <br>
+    <input type="radio" name="satisfaction" value="2"> Very Dissatisfied <br>
+    <br>
+
+    <label>3. How would you rate the quality of your relationships?</label>
+    <input type="radio" name="relationships" value="10"> Excellent <br>
+    <input type="radio" name="relationships" value="8"> Good <br>
+    <input type="radio" name="relationships" value="6"> Average <br>
+    <input type="radio" name="relationships" value="4"> Poor <br>
+    <input type="radio" name="relationships" value="2"> Very Poor <br>
+    <br>
+
+    <label>4. How would you rate your current health status?</label>
+    <input type="radio" name="health" value="10"> Excellent <br>
+    <input type="radio" name="health" value="8"> Good <br>
+    <input type="radio" name="health" value="6"> Average <br>
+    <input type="radio" name="health" value="4"> Poor <br>
+    <input type="radio" name="health" value="2"> Very Poor <br>
+    <br>
+
+    <label>5. How satisfied are you with your economic situation?</label>
+    <input type="radio" name="economic" value="10"> Very Satisfied <br>
+    <input type="radio" name="economic" value="8"> Satisfied <br>
+    <input type="radio" name="economic" value="6"> Neutral <br>
+    <input type="radio" name="economic" value="4"> Dissatisfied <br>
+    <input type="radio" name="economic" value="2"> Very Dissatisfied</p>
+    <br><br>
+  </p>
+
+    <button type="button" onclick="calculateHappiness()">Calculate Happiness Index</button>
+    <br><br>
+</form>
+<div id="container" style="display: none;">
+<div id="result" style="display: none; -webkit-text-fill-color: #000000; text-align: center; margin-top: 30px;">
+    <h1 style="-webkit-text-fill-color: #F7A804; font-size: 20px; font-style: bold;"><strong>Happiness Index Score:</strong> </h1>
+    <p id="score" style="font-family: 'Times New Roman', Times, serif; font-size: 30px; font-style: bold;"></p>
+
+      <p style="font-family: 'Times New Roman', Times, serif;">Based on your happiness score, here's a playlist for you:</p>
+      <iframe id="playlist" style="border-radius:12px" src="" width="100%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+</div>
+</div>
+
+<br><br><br><br>
+
+<script>
+function calculateHappiness() {
+    var happy = parseInt(document.querySelector('input[name="happy"]:checked').value);
+    var satisfaction = parseInt(document.querySelector('input[name="satisfaction"]:checked').value);
+    var relationships = parseInt(document.querySelector('input[name="relationships"]:checked').value);
+    var health = parseInt(document.querySelector('input[name="health"]:checked').value);
+    var economic = parseInt(document.querySelector('input[name="economic"]:checked').value);
+
+    var totalScore = happy + satisfaction + relationships + health + economic;
+    var happinessIndex = totalScore / 5; // Assuming there are 5 indicators
+    
+    document.getElementById("score").textContent = happinessIndex.toFixed(2);
+    document.getElementById("container").style.display = "block";
+    document.getElementById("result").style.display = "block";
+
+    var playlist = document.getElementById("playlist");
+
+    // Choose playlist based on happiness index
+    if (happinessIndex <= 2) {
+        playlist.src = "https://open.spotify.com/embed/playlist/37i9dQZF1DX1KVBf2zZZ2X?utm_source=generator";
+    } else if (happinessIndex > 2 && happinessIndex <= 4) {
+        playlist.src = "https://open.spotify.com/embed/playlist/6Ail4atkMPnFdPpAMVcbJ8?utm_source=generator";
+    } else if (happinessIndex > 4 && happinessIndex <= 6) {
+        playlist.src = "https://open.spotify.com/embed/playlist/6TpxAkbyi4L6rqkl7zilnG?utm_source=generator";
+    } else if (happinessIndex > 6 && happinessIndex <= 8) {
+        playlist.src = "https://open.spotify.com/embed/playlist/370FY3Goqtcp7FCZS4skeF?utm_source=generator";
+    } else {
+        playlist.src = "https://open.spotify.com/embed/playlist/37i9dQZF1DXa1BeMIGX5Du?utm_source=generator";
+    }
+
+    document.getElementById("result").scrollIntoView({ behavior: 'smooth' });
+}
+</script>
+</body>
+</html>
